@@ -1,0 +1,54 @@
+.autopark {
+  padding: 50px 0;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+  }
+
+  &__preview {
+    transition: all .5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__item-title {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+
+  &__info {
+    margin-top: 17px;
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    justify-content: center;
+    margin-bottom: 13px;
+  }
+
+  &__info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__info-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  &__info-title {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+
+  &__button {
+    padding: 15px 53px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,258 @@
+@media (max-width: 1199px) {
+  .container {
+    width: 940px;
+  }
+
+  .header {
+    &__logo {
+      margin-right: 200px;
+    }
+
+    &__list {
+      margin-right: 100px;
+    }
+  }
+
+  .promo {
+    &__body {
+      width: 390px;
+    }
+  }
+
+  .autopark {
+    padding: 0 0 50px 0;
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 50px;
+    }
+
+    &__item {
+      text-align: center;
+    }
+  }
+
+  .price {
+    &__car {
+      right: -400px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 760px;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .header {
+    &__logo {
+      margin-right: 50px;
+    }
+
+    &__list {
+      margin-right: 80px;
+    }
+  }
+
+  .promo {
+    padding: 40px 0;
+    &__title {
+      font-size: 6rem;
+    }
+
+    &__body {
+      width: 315px;
+    }
+  }
+
+  .price {
+    &__form {
+      display: flex;
+      flex-direction: column;
+      width: 345px;
+      padding: 30px 0 60px 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 520px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .promo {
+    background: url('../../images/background.png') left/cover no-repeat;
+    &__header {
+      width: 100%;
+    }
+    &__title {
+      font-size: 4rem;
+    }
+  }
+  .header {
+    &__item {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      height: 100vh;
+      background-color: black;
+      opacity: .9;
+      width: 70%;
+      color: $white;
+      text-align: center;
+      justify-content: center;
+      transition: .5s all;
+      z-index: 20;
+      &_active {
+        left: 0;
+      }
+    }
+
+    &__list {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &__link {
+      font-size: 3.5rem;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 18px;
+      width: 40px;
+      height: 24px;
+      span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $black;
+        transition: .5s all;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &_active {
+        span {
+          margin-bottom: -4px;
+          &:nth-child(1) {
+            transform: translateY(15px) rotate(-45deg);
+          }
+          &:nth-child(2) {
+            display: none;
+          }
+          &:nth-child(3) {
+            transform: translateY(-5px) rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+
+  .price {
+    &__info {
+      z-index: -1;
+    }
+  }
+
+  .autopark {
+    &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__preview {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+
+  .footer {
+    z-index: -1;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 1.25;
+  }
+
+  .button {
+    &:hover {
+      background-color: $black;
+    }
+  }
+
+  .header {
+    &__item {
+      width: 80%;
+    }
+
+    &__link {
+      font-size: 3rem;
+    }
+
+    &:active {
+
+    }
+  }
+
+  .promo {
+    &__title {
+      font-size: 3.5rem;
+    }
+
+    &__body, &__button {
+      width: 100%;
+    }
+  }
+
+  .price {
+    &__form {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+
+    &__info {
+      padding-top: 20px;
+    }
+
+    &__car {
+      display: none;
+    }
+  }
+
+  .autopark {
+
+    &__item {
+      width: 100%;
+    }
+
+    &__item-title {
+      font-size: 2rem;
+    }
+
+    &__info {
+      grid-template-columns: repeat(3, 98px);
+    }
+  }
+}

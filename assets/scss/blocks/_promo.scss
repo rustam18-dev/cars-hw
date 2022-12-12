@@ -1,0 +1,28 @@
+.promo {
+  background: url("../../images/background.png") top/cover no-repeat;
+  margin: 90px 0 0 0;
+  padding: 100px 0 190px 0;
+
+  &__header {
+    width: 875px;
+  }
+
+  &__body {
+    width: 502px;
+    margin: 40px 0;
+  }
+
+  &__title {
+    font-size: 8rem;
+    font-weight: 700;
+  }
+
+  &__text {
+    line-height: 1.25;
+  }
+
+  &__button {
+    width: 334px;
+    height: 64px;
+  }
+}

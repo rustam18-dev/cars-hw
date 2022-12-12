@@ -1,0 +1,38 @@
+.price {
+  &__subtitle {
+    color: #5D5D5F;
+  }
+
+  &__info {
+    position: relative;
+  }
+
+  &__car {
+    position: absolute;
+    right: -200px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    padding: 60px 0px 120px 0px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 65px;
+    padding: 22px 18px;
+    border: 1px solid #5D5D5F;
+    margin: 10px 0;
+    font-size: 1.6rem;
+    &::placeholder {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__button {
+    margin-top: 20px;
+    height: 64px;
+  }
+}
